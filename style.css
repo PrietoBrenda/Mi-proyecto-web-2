@@ -1429,3 +1429,21 @@ footer {
     font-size: 1.5rem;
   }
 }
+/* 🔹 Tablets o pantallas medianas */
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+  .section {
+    padding: 3rem 8%;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr; /* 2 columnas en horizontal */
+  }
+  .card-content h3 {
+    font-size: 1.4rem;
+  }
+  .price {
+    font-size: 1.8rem;
+  }
+}
