@@ -1345,20 +1345,20 @@ footer {
   }
 }
 
+/* 🔹 Corrección crítica: menú en móviles ≤ 768px */
 @media (max-width: 768px) {
   header {
     flex-wrap: wrap;
     padding: 1rem 5%;
   }
-  .menu {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding-top: 1rem;
+  .brand h1 {
+    font-size: 1.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
-  .menu.active {
-    display: flex;
+  .menu {
+    display: none !important;
   }
   .mobile-toggle {
     display: block;
@@ -1430,7 +1430,6 @@ footer {
     padding: 2rem 5%;
   }
 
-  /* ✅ CORREGIDO: .catalog-grid, NO .cards */
   .catalog-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -1465,7 +1464,6 @@ footer {
     padding: 3rem 8%;
   }
 
-  /* ✅ CORREGIDO: .catalog-grid */
   .catalog-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
