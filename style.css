@@ -1430,7 +1430,7 @@ footer {
   }
 }
 /* 🔹 Tablets o pantallas medianas */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 764px) {
   .hero h2 {
     font-size: 2.5rem;
   }
