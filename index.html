@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frutas y Verduras Congeladas | Natural y Familiar</title>
+  <meta name="description" content="Tienda familiar de frutas y verduras congeladas.">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+  
+  <!-- VINCULACIÓN AL CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="brand">
+      <img src="https://i.pinimg.com/originals/51/f3/96/51f396180cd21e68d53bf93c4251673f.jpg?nii=t" alt="logo"/>
+      <h1>Frutas<span>y<span>Verduras</span>Congeladas</span></h1>
+    </div>
+    <nav class="menu">
+      <a href="#" data-section="home" class="active">
+        <i class="fas fa-home"></i> Inicio
+      </a>
+      <a href="#" data-section="about">
+        <i class="fas fa-heart"></i> Historia
+      </a>
+      <a href="#" data-section="catalogo">
+        <i class="fas fa-leaf"></i> Catálogo
+      </a>
+      <a href="#" data-section="contacto">
+        <i class="fas fa-envelope"></i> Contacto
+      </a>
+      <!-- Botón del carrito -->
+      <a href="#" id="cart-btn" class="cart-button">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+      </a>
+    </nav>
+    <button class="mobile-toggle" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <main>
+    <!-- SECCIÓN INICIO -->
+    <section id="home" class="section active">
+      <div class="hero">
+        <div class="hero-content">
+          <span class="hero-badge">🌱 100% Natural</span>
+          <h2>Frutas y Verduras<br><span class="gradient-text">Congeladas</span></h2>
+          <p>De nuestra familia a tu mesa 🍓🥦<br>Productos naturales, seleccionados y congelados para mantener su frescura.</p>
+          <div class="hero-buttons">
+            <button class="cta primary" data-section="catalogo">
+              <i class="fas fa-shopping-basket"></i> Ver Catálogo
+            </button>
+            <button class="cta secondary" data-section="contacto">
+              <i class="fas fa-phone"></i> Contáctanos
+            </button>
+          </div>
+        </div>
+        <div class="hero-decoration">
+          <div class="float-icon">🍓</div>
+          <div class="float-icon">🥦</div>
+          <div class="float-icon">🥑</div>
+        </div>
+      </div>
+
+      <!-- Características -->
+      <div class="features">
+        <div class="feature-card">
+          <i class="fas fa-leaf"></i>
+          <h3>100% Natural</h3>
+          <p>Sin aditivos ni conservantes</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-snowflake"></i>
+          <h3>Frescura</h3>
+          <p>Congelado en su punto óptimo</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-heart"></i>
+          <h3>Familiar</h3>
+          <p>Empresa local con valores</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-truck"></i>
+          <h3>Entrega</h3>
+          <p>Rápida y en perfecto estado</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN HISTORIA -->
+    <section id="about" class="section">
+      <div class="content">
+        <div class="section-header">
+          <span class="section-badge">Quiénes Somos</span>
+          <h2>Nuestra Historia</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="lead">Somos una empresa familiar que comenzó con la pasión por la alimentación saludable y el respeto por la naturaleza.</p>
+            <p>Seleccionamos frutas y verduras de productores locales, y las congelamos en su punto justo para conservar todo su sabor y valor nutritivo.</p>
+            <p>Creemos en la comida real, sin desperdicio y con amor por los animales y el planeta 🌱💚.</p>
+            
+            <div class="values">
+              <div class="value-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Productos locales</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Sin desperdicios</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Eco-friendly</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-image">
+            <img src="https://img.freepik.com/fotos-premium/contenedores-bolsas-plastico-diferentes-verduras-congeladas-refrigerador_1015293-13998.jpg?w=2000" alt="Variedad de nuestros productos congeladas">
+            <div class="image-overlay">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN CATÁLOGO -->
+    <section id="catalogo" class="section">
+      <div class="section-header">
+        <span class="section-badge">Productos</span>
+        <h2>Nuestro Catálogo</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Frutas y verduras congeladas de la más alta calidad</p>
+      </div>
+
+      <div class="catalog-grid">
+        <article class="card" data-product="palta" data-price="17000">
+          <div class="card-image">
+            <img src="https://www.rioalto.cl/wp-content/webpc-passthru.php?src=https://www.rioalto.cl/wp-content/uploads/2023/05/palta-pure-100.jpg&nocache=1" alt="Palta congelada">
+            <span class="badge-new">Popular</span>
+          </div>
+          <div class="card-content">
+            <h3>Palta Congelada</h3>
+            <p class="description">Cremosa y lista para usar</p>
+            
+            <div class="quantity-selector">
+              <label>Cantidad (Kg):</label>
+              <div class="quantity-controls">
+                <button class="qty-btn minus" aria-label="Reducir cantidad">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <input type="number" class="qty-input" value="1" min="1" max="10" readonly>
+                <button class="qty-btn plus" aria-label="Aumentar cantidad">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+            </div>
+            
+            <div class="card-footer">
+              <p class="price">$17000 <span>/Kg</span></p>
+              <button class="btn-add-cart" title="Agregar al carrito">
+                <i class="fas fa-shopping-cart"></i> Agregar
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-product="frutillas" data-price="12000">
+          <div class="card-image">
+            <img src="https://www.todoparaellas.com/u/fotografias/m/2022/9/4/f1280x720-49546_181221_5050.png" alt="Frutillas congeladas">
+            <span class="badge-new">Oferta</span>
+          </div>
+          <div class="card-content">
+            <h3>Frutillas</h3>
+            <p class="description">Dulces y jugosas</p>
+            
+            <div class="quantity-selector">
+              <label>Cantidad (Kg):</label>
+              <div class="quantity-controls">
+                <button class="qty-btn minus">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <input type="number" class="qty-input" value="1" min="1" max="10" readonly>
+                <button class="qty-btn plus">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+            </div>
+            
+            <div class="card-footer">
+              <p class="price">$12000 <span>/Kg</span></p>
+              <button class="btn-add-cart">
+                <i class="fas fa-shopping-cart"></i> Agregar
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-product="morron" data-price="11000">
+          <div class="card-image">
+            <img src="https://f.fcdn.app/imgs/c8db87/www.holacongelados.com/hocouy/258d/original/catalogo/1228_1228_1/1500-1500/morron-1kg-morron-1kg.jpg" alt="Morrón congelado">
+          </div>
+          <div class="card-content">
+            <h3>Morrón</h3>
+            <p class="description">Fresco y crujiente</p>
+            
+            <div class="quantity-selector">
+              <label>Cantidad (Kg):</label>
+              <div class="quantity-controls">
+                <button class="qty-btn minus">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <input type="number" class="qty-input" value="1" min="1" max="10" readonly>
+                <button class="qty-btn plus">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+            </div>
+            
+            <div class="card-footer">
+              <p class="price">$11000 <span>/Kg</span></p>
+              <button class="btn-add-cart">
+                <i class="fas fa-shopping-cart"></i> Agregar
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-product="arandanos" data-price="15000">
+          <div class="card-image">
+            <img src="https://acdn.mitiendanube.com/stores/001/201/915/products/3c4352a5-69f1-4870-b939-08d515082d751-9827a4af9e6e9d6b6f16194690601230-640-0.jpeg" alt="Mix de Arándanos">
+            <span class="badge-new">Nuevo</span>
+          </div>
+          <div class="card-content">
+            <h3>Mix de Arándanos</h3>
+            <p class="description">Antioxidantes naturales</p>
+            
+            <div class="quantity-selector">
+              <label>Cantidad (Kg):</label>
+              <div class="quantity-controls">
+                <button class="qty-btn minus">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <input type="number" class="qty-input" value="1" min="1" max="10" readonly>
+                <button class="qty-btn plus">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+            </div>
+            
+            <div class="card-footer">
+              <p class="price">$15000 <span>/Kg</span></p>
+              <button class="btn-add-cart">
+                <i class="fas fa-shopping-cart"></i> Agregar
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="section">
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="section-header">
+            <span class="section-badge">Hablemos</span>
+            <h2>Contacto</h2>
+            <div class="section-divider"></div>
+          </div>
+          <p>¿Tienes alguna pregunta? Estamos aquí para ayudarte.</p>
+          
+          <div class="info-items">
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Teléfono</strong>
+                <p>+54 2235136298</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <p>info@frutascongeladas.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Ubicación</strong>
+                <p>Buenos Aires, Argentina</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form id="contact-form" action="https://formspree.io/f/xqabnvaw" method="POST">
+          <div class="form-group">
+            <label><i class="fas fa-user"></i> Nombre</label>
+            <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+          </div>
+
+          <div class="form-group">
+            <label><i class="fas fa-envelope"></i> Email</label>
+            <input type="email" name="email" placeholder="tu@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label><i class="fas fa-comment"></i> Mensaje</label>
+            <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>Frutas<span>y<span>Verduras<span>Congeladas</span></h3>
+        <p>Calidad natural desde 2024</p>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Frutas y Verduras Congeladas — Empresa Familiar & Natural 💚</p>
+    </div>
+  </footer>
+
+  <!-- Botón scroll to top -->
+  <button class="scroll-top" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- MODAL DEL CARRITO -->
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-modal-content">
+      <div class="cart-header">
+        <h2><i class="fas fa-shopping-cart"></i> Mi Carrito</h2>
+        <button class="cart-close" aria-label="Cerrar carrito">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="cart-body">
+        <div id="cart-items" class="cart-items">
+          <!-- Los productos se agregan aquí dinámicamente -->
+        </div>
+        
+        <div id="cart-empty" class="cart-empty">
+          <i class="fas fa-shopping-basket"></i>
+          <p>Tu carrito está vacío</p>
+        </div>
+      </div>
+      
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <strong id="cart-total-price">$0</strong>
+        </div>
+        <button class="btn-checkout">
+          <i class="fas fa-credit-card"></i> Finalizar Compra
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- VINCULACIÓN AL JAVASCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
