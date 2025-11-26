@@ -451,12 +451,11 @@ header.scrolled {
   margin: 0 auto;
 }
 
-/* En style.css */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: flex-start; /* <--- CAMBIA 'center' POR ESTO */
+  align-items: flex-start;
   margin-top: 3rem;
 }
 
@@ -511,7 +510,6 @@ header.scrolled {
   font-weight: 600;
 }
 
-/* En style.css */
 .about-image {
   display: flex;
   align-items: flex-start;
@@ -520,9 +518,7 @@ header.scrolled {
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   position: relative;
-  
-  /* AGREGA O MODIFICA ESTA LÍNEA: */
-  margin-top: -15px; /* Cuanto más negativo el número, más sube la imagen */
+  margin-top: -15px;
 }
 
 .about-text h2, 
@@ -574,7 +570,6 @@ header.scrolled {
   50% { transform: scale(1.2); }
 }
 
-
 /* ========================================
    CATÁLOGO
 ======================================== */
@@ -598,6 +593,8 @@ header.scrolled {
   transition: all var(--transition-normal);
   position: relative;
   overflow: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 .card:hover {
@@ -976,7 +973,6 @@ footer {
    CARRITO DE COMPRAS
 ======================================== */
 
-/* Botón del carrito en el header */
 .cart-button {
   position: relative;
   padding: 0.8rem 1.2rem !important;
@@ -1019,7 +1015,6 @@ footer {
   100% { transform: scale(1); }
 }
 
-/* Selector de cantidad */
 .quantity-selector {
   margin: 1rem 0;
   padding: 1rem;
@@ -1078,7 +1073,6 @@ footer {
   background: white;
 }
 
-/* Botón agregar al carrito */
 .btn-add-cart {
   background: var(--color-accent);
   color: white;
@@ -1106,7 +1100,6 @@ footer {
   transform: translateY(0);
 }
 
-/* Modal del carrito */
 .cart-modal {
   display: none;
   position: fixed;
@@ -1332,7 +1325,10 @@ footer {
   box-shadow: 0 8px 25px rgba(58, 95, 11, 0.5);
 }
 
-/* RESPONSIVE DESIGN */
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
 @media (max-width: 1024px) {
   .hero {
     grid-template-columns: 1fr;
@@ -1415,12 +1411,15 @@ footer {
   }
 }
 
-/* 🔹 Móviles - evita que se corte a los lados */
+/* 🔹 MÓVILES PEQUEÑOS */
 @media (max-width: 480px) {
-
-  /* Evita desbordamiento horizontal */
   html, body {
     overflow-x: hidden;
+  }
+
+  .hero {
+    gap: 1.5rem;
+    padding: 2rem 5%;
   }
 
   .hero h2 {
@@ -1431,18 +1430,17 @@ footer {
     padding: 2rem 5%;
   }
 
-  /* 🔥 Fuerza 1 columna para que NO se corte */
-  .cards {
+  /* ✅ CORREGIDO: .catalog-grid, NO .cards */
+  .catalog-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
-  /* 🔥 Asegura que la tarjeta no sea más ancha que la pantalla */
   .card {
     width: 100%;
     max-width: 100%;
   }
 
-  /* 🔥 Asegura que las imágenes no rompan el ancho */
   .card img {
     width: 100%;
     height: auto;
@@ -1457,7 +1455,7 @@ footer {
   }
 }
 
-/* 🔹 Tablets o pantallas medianas */
+/* 🔹 TABLETS */
 @media (min-width: 481px) and (max-width: 764px) {
   .hero h2 {
     font-size: 2.5rem;
@@ -1467,9 +1465,10 @@ footer {
     padding: 3rem 8%;
   }
 
-  /* 2 columnas en tablet */
-  .cards {
-    grid-template-columns: 1fr 1fr;
+  /* ✅ CORREGIDO: .catalog-grid */
+  .catalog-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .card-content h3 {
@@ -1479,7 +1478,4 @@ footer {
   .price {
     font-size: 1.8rem;
   }
-}
- * {
-  box-sizing: border-box;
 }
